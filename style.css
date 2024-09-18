@@ -1,0 +1,35 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: none;
+} */
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: white;
+    overflow: none;
+}
+span {
+    background: url("https://cdn4.iconfinder.com/data/icons/set-1/32/__1-512.png");
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    animation: animate 4s infinite;
+    transform: translate(-50%, -50%);
+}
+@keyframes animate{
+    from {
+        filter: hue-rotate(0deg);
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        filter: hue-rotate(700deg);
+        transform: translate(-50%, -5000%);
+        opacity: 0;
+    }
+}
