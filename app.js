@@ -1,6 +1,6 @@
 const body = document.querySelector("body");
 
-body.addEventListener("mousemove", (event)=>{
+body.addEventListener("click", (event)=>{
     event.preventDefault();
     const xpos = event.offsetX;
     const ypos = event.offsetY;
